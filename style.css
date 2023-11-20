@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+
+
+}
+
+.header-logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header-title span a:hover {
+  color: #43d8e9;
+}
+
+.header-title a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  outline-color: gold;
+  lighting-color: green;
+}
+
+.header-section span a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.header-section span a:hover {
+  color: #43d8e9;
+}
+
+.header-footer a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.banner {
+  background: linear-gradient(#f7cacd, #92a8d1, #a0daa9);
+  padding-bottom: 4%;
+
+
+}
+
+.home-hero {
+  display: flex;
+}
+
+.abtleft {
+  /*margin-left: 10%;*/
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+}
+
+/*@keyframes example {
+    from {
+      left: -10%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  .abt-left img {
+    width: 50%;
+  }*/
+.abtright {
+  margin-top: 100px;
+  position: relative;
+  /*animation-name: examples;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;*/
+}
+
+@keyframes examples {
+  from {
+    right: -10%;
+  }
+
+  to {
+    right: 0%;
+  }
+}
+
+.abtright h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+
+.abt-para {
+  color: #333;
+  font-size: 30px;
+  font-weight: 400;
+
+  line-height: 2;
+}
+
+
+.btn--bg {
+  margin-top: 5%;
+  margin-left: 25%;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+}
+
+.btn {
+  background: #7843e9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.home-hero-mouse {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.mouse::before {
+  content: " ";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+}
+
+
+
+/*section div {
+            margin-bottom: 700px;
+            background-color: aqua;
+        }*/
+.section-title {
+  align-items: center;
+  text-align: center;
+}
+
+
+
+#AboutMe,
+#Education,
+#TechnicalSkills,
+#Projects {
+  margin-bottom: 400px;
+
+}
+
+#AboutMe {
+  margin-top: 50px;
+}
+
+#Education {
+  background: linear-gradient(#f89554, #ffffff, #6cf280);
+  padding-bottom: 4%;
+}
+
+#ContactMe {
+  background: linear-gradient(#f89554, #ffffff, #6cf280);
+  padding-bottom: 4%;
+
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.skills h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 15vw;
+  width: 15vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+  background-color: #00eeff;
+}
+
+.skill-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+.skill-card h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.skill-card h2:hover {
+  color: black;
+}
+
+.about-contact {
+  background-color: #a3998e;
+  padding-bottom: 7%;
+  padding-top: 2rem;
+}
+
+.contact-form {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  background: #fff;
+  padding: 4rem;
+  margin-top: 6rem;
+  max-width: 80rem;
+  width: 50%;
+  border-radius: 5px;
+  margin: 5rem auto 0 auto;
+}
+
+.contact-form-label {
+  color: #666;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: left;
+}
+
+#email,
+#message,
+#name {
+  color: #333;
+  padding: 1.5rem;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  font-size: 1rem;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.abt-main-sub {
+  font-weight: 400;
+}
+
+.contact-form-container {
+  margin-bottom: 2rem;
+}
+
+.btn-submit {
+  width: 150px;
+  padding: 15px;
+  background: #ff5361;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  margin-left: 65%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-section {
+  width: 90%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 6fr 4fr 2fr;
+}
+
+.footer-name {
+  width: 50%;
+  line-height: 1.5;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.footer-name h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.footer-name p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: gainsboro;
+}
+
+.footer-media {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.footer-media h2 {
+  font-size: 25px;
+}
+
+.footer-media div span {
+  margin-right: 30px;
+}
+
+.footer-media a {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+.footer-hr {
+  border-top: 1px solid gray;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 5%;
+  padding-bottom: 3%;
+}
+
+.copyright p {
+  color: gainsboro;
+  font-size: 12px;
+}
+
+.copyright a {
+  color: gainsboro;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.details a {
+  text-decoration: none;
+  color: white;
+}
+
+.details {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.details h2 {
+  font-size: 25px;
+}
